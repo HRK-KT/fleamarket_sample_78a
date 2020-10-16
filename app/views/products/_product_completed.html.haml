@@ -1,0 +1,48 @@
+.contents
+  .contents__logo
+    .contents__logo__FURIMA
+      = link_to root_path do
+        = image_tag 'logo/logo.png', alt: 'logo', class: 'top-logo'
+  .contents__send
+    .contents__send__waiting
+      .contents__send__waiting__confirm
+        %ul.text
+          %li.text1
+            %b 発送をお待ちください
+          %li.text2
+            %b 出品者からの発送通知をお待ちください
+  .contents__detail
+    .contents__detail__title
+      .contents__detail__title__confirm
+        %b 購入内容の確認
+    .contents__detail__pic
+      .contents__detail__pic__confirm
+        = image_tag 'pict/beef.jpg', alt: 'beef', class: 'beef-pic'
+    .contents__detail__price
+      .contents__detail__price__confirm
+        %b 支払い金額
+    .contents__detail__method
+      .contents__detail__method__confirm
+        %b 支払い方法
+    .contents__detail__address
+      .contents__detail__address__confirm
+        %b 配送先
+    .contents__detail__check
+      .contents__detail__check__message
+        %p 商品の購入後は、取引画面で配送状況の確認や
+        %p メッセージのやりとりができます。
+    .contents__detail__buy
+      = link_to root_path , class: "buyBtn" do
+        .contents__detail__buy__confirm
+          取引画面をみる
+  .contents__footer
+    .contents__footer__code
+      %ul.lists
+        %li.list プライバシーポリシー
+        %li.list FURIMA利用規約
+        %li.list 特定商取引に関する表記
+    .contents__footer__logo
+      .contents__footer__logo__rights
+        = image_tag 'logo/logo-white.png', alt: 'logo-white', class: 'footer-logo'
+      .contents__footer__logo__text
+        ©︎FURIMA

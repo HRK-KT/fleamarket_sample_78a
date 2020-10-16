@@ -227,6 +227,21 @@
           }
         }
       }
+      &__sellBtn {
+        margin: 16px 0px;
+        padding: 10px 0px;
+        background-color:#ea352d;
+        color: white;
+        font-weight: 600;
+        font-size: 24px;
+        .link__sellBtn {
+          text-decoration: none;
+          color: white;
+          &__text {
+            text-align: center;
+          }
+        }
+      }
       &__detail {
         .detail-text {
           font-size: 18px;

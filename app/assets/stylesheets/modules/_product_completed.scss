@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+.contents {
+  background-color: #f8f8f8;
+  &__logo {
+    text-align: center;
+    &__FURIMA {
+      .top-logo {
+        height: 49px;
+        width: 185px;
+      }
+    }
+  }
+  &__send {
+    margin: 0px 200px;
+    &__waiting {
+      &__confirm {
+        text-align: center;
+        background-color:#ffffe0;
+        .text {
+          .text1 {
+            margin: 20px 0px;
+            padding-top: 20px;
+            color: orangered;
+            font-size: 22px;
+          }
+          .text2 {
+            font-size: 14px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  &__detail {
+    background-color: white;
+    margin: 0px 200px;
+    &__title {
+      padding: 32px 16px;
+      &__confirm {
+        font-size: 24px;
+        text-align: center;
+        padding: 32px 16px;
+      }
+    }
+    &__pic {
+      padding: 32px 16px;
+      &__confirm {
+        padding-left: 50px;
+        .beef-pic {
+          height: 25%;
+          width: 25%;
+        }  
+      }
+    }
+    &__price {
+      padding: 32px 16px;
+      margin: 0px 100px;
+      &__confirm {
+        font-size: 20px;
+      }
+    }
+    &__method {
+      padding: 32px 16px;
+      margin: 0px 100px;
+      &__confirm {
+        font-size: 18px;
+      }
+    }
+    &__address {
+      padding: 32px 16px;
+      margin: 0px 100px;
+      &__confirm {
+        font-size: 18px;
+      }
+    }
+    &__check {
+      &__message {
+        text-align: center;
+      }
+    }
+    &__buy {
+      background-color: #ea352d;
+      margin: 30px 100px;
+      .buyBtn {
+        text-decoration: none;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contents__detail__buy__confirm {
+          color: white;
+          height: 60px;
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+  &__footer {
+    background-color: #f8f8f8;
+    &__code {
+      .lists {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+        padding: 50px 70px ;
+      }
+    }
+    &__logo {
+      &__rights {
+        display: flex;
+        justify-content: center;
+        .footer-logo {
+          height: 25%;
+          width: 25%;
+        }
+      }
+      &__text {
+        font-size: 12px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -68,6 +68,10 @@
         .contents__tax
           %span.tax
             (税込)送料込み
+      .contents__sellBtn
+        = link_to product_path(:products_id), class: "link__sellBtn", method: :put do
+          .link__sellBtn__text
+            購入画面に進む
       .contents__detail
         .detail-text
           テストテストテストテストテストテスト
@@ -136,7 +140,6 @@
                 %p.tax-include
                   (税込)
 
-%a.sellbtn
-  %span.btn-text
-    出品する
-  = image_tag 'icon/icon_camera.png', class: "camera-btn"
+= render "items/app_banner"
+= render "items/footer"
+= render "items/display_btn"
