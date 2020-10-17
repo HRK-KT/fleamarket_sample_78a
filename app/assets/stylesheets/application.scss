@@ -11,8 +11,6 @@
 @import "modules/display_btn";
 @import "modules/app_banner";
 @import "modules/footer";
-@import "modules/product_detail";
-@import "modules/products_show";
 
 // ユーザー関連
 @import "modules/users/users";
@@ -22,6 +20,11 @@
 
 @import "mypages";
 @import "creditcards";
+
+// 商品確認ページ
+@import "modules/product_detail";
+@import "modules/product_confirm";
+@import "modules/product_completed";
 
 // 商品一覧ページ
 @import "modules/products/products_index";

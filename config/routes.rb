@@ -12,7 +12,6 @@ Rails.application.routes.draw do
   resources :users, only: [:index]
   resources :mypages, only: [:show, :index]
   resources :creditcards, only: [:new, :create, :edit, :update, :index, :show]
-
   resources :products
   resources :addresses , only: [:new, :create ]
 
@@ -20,4 +19,3 @@ Rails.application.routes.draw do
   get 'not_found', to:'products#not_found'
   
   end
-
