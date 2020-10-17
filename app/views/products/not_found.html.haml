@@ -1,0 +1,14 @@
+.entire_box
+  .new__page__header
+    = link_to image_tag("logo/logo.png", alt: "logo"), root_path
+
+  .product-error-field
+    .product-error-field__text
+      ＜Not_Found＞お探しのページは見つかりませんでした。
+    .product-error-field__detail
+      この商品は削除された可能性があります。
+      %br
+      お手数ですが、トップページから操作をやり直してください。
+    .product-error-field__link
+      = link_to 'トップページに戻る', root_path 
+

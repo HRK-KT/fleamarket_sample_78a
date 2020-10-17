@@ -32,7 +32,7 @@
           @include product_required(#3ccace);
         }
       }
-      .image__box{
+      .image-box, .previews{
         margin: 20px 18px 0 0;
         height: 110px;
         background-color: #F0F0F0;
@@ -50,6 +50,7 @@
             }
         }
       }
+
     }
     .product__name__box{
       @include product_box(130px);
@@ -295,7 +296,7 @@
         @include product_priceBox;
         padding-bottom: 50px;
         margin-top: 40px 20px 0 0;
-        button{
+        &__button{
           background-color: #3ccace;
           color: #fff;
           font-size: 17px;
@@ -309,3 +310,59 @@
   }
 }
 
+
+// 商品画像プレビュー表示箇所
+
+#previews {
+  width: 650px;
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.image-preview {
+  width: 50px;
+  height: 50px;
+  &__wrapper {
+    height: 100px;
+    background-color: #F0F0F0;
+  }
+}
+
+img.preview {
+  width: 100px;
+  height: 100px;
+}
+
+.input {
+  background-color: #F0F0F0;
+  width: 650px;
+  margin :0px 25px;
+  height: 100px;
+  border: dashed 1px grey;
+  padding-top: 10px;
+}
+
+.input-area {
+  height: 50px;
+  line-height: 50px;
+}
+
+.image-preview {
+  &__wrapper {  
+    height: 50px;
+  }
+}
+
+.image-preview_btn_delete {
+  height: 30px;
+  background-color: #ffb340;
+  width: 100px;
+  color: white;
+  line-height: 30px;
+  margin: 0px auto;
+}
+
+.hidden {
+  display: none;
+}

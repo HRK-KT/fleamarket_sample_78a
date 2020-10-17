@@ -1,6 +1,8 @@
 class CreditcardsController < ApplicationController
   def index
-  
+  end
+
+  def show
   end
 
   def new
@@ -15,6 +17,20 @@ class CreditcardsController < ApplicationController
       render :new
     end
   end
+
+
+  def edit
+  end
+
+  def update
+    @creditcard = Creditcard.find(params[:id])
+    if @creditcard.update(creditcard_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
 
   private
 

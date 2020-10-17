@@ -4,6 +4,7 @@ ja:
     models:
       user: ユーザー
       address: 送付先住所
+      product: 商品
     attributes:
       user:
         nickname: ニックネーム
@@ -17,6 +18,16 @@ ja:
         prefecture: 都道府県
         city: 市町村
         house_number: 番地
+      product:
+        images: 画像
+        product_name: 商品名
+        product_detail: 商品説明 
+        delivery_area: 発送元の地域
+        size_id: サイズ
+        product_status_id: 商品の状態
+        delivery_fee_id: 配送料の負担
+        delivery_time_id: 発送までの日数
+        price: 価格       
 
     errors:
       messages:

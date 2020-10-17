@@ -52,6 +52,7 @@
   |Column|Type|Options|
   |------|----|-------|
   |product_name|text|null: false|
+  |product_detail|text|null:false|
   |price|integer|null: false|
   |brand|string||
   |size|integer|null: false|

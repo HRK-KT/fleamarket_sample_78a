@@ -11,8 +11,11 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index]
   resources :mypages, only: [:show, :index]
-  resources :creditcards, only: [:new, :create, :edit, :update] 
-
-  resources :products, only: [:show, :new, :create, :index, :update] 
+  resources :creditcards, only: [:new, :create, :edit, :update, :index, :show]
+  resources :products
   resources :addresses , only: [:new, :create ]
+
+  # 削除済商品へのアクセスした場合のエラー画面を表示するためのルーティング
+  get 'not_found', to:'products#not_found'
+  
   end
