@@ -74,10 +74,11 @@
         = @product_s.product_detail
       - if @product.user == current_user || !user_signed_in?
       - else
-        .contents__sellBtn
-          = link_to purchase_check_product_path(@product), class: "purchaseBtn", method: :get do
-            .link__sellBtn__text
-              購入画面に進む
+        - if @product.trading_status == 1
+          .contents__sellBtn
+            = link_to purchase_check_product_path(@product), class: "purchaseBtn", method: :get do
+              .link__sellBtn__text
+                購入画面に進む
       .contents__table
         %table.main-table
           %tr.table
