@@ -104,10 +104,21 @@
           }
         }
         .category__styleSelect{
-          margin-top: 16px;
           &__selectarea{
             select{
               @include product_select;
+            }
+            &__list{
+              margin-top: 16px;
+              select{
+                @include product_select;
+              }
+            }
+            &__two{
+              margin-top: 16px;
+              select{
+                @include product_select;
+              }
             }
           }
         }

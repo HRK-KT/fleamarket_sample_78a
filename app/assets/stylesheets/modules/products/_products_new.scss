@@ -110,8 +110,8 @@
             }
           }
           &__selectarea__listen__added{
+            margin-top: 16px;
             select{
-              margin-top: 16px;
               @include product_select;
             }
           }

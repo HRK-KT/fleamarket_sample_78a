@@ -19,7 +19,7 @@ class ProductsController < ApplicationController
 
   def edit
     @product.images.new
-
+    
     @category_parent_array = ["---"]
     @category_parent_array = Category.where(ancestry: nil)
   end

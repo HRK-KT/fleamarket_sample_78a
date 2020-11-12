@@ -4,6 +4,7 @@ $(function(){
     return html;
   }
   function appendChidrenBox(insertHTML){
+    console.log("bbbb")
     var childSelectHtml = '';
     childSelectHtml = `<div class='category__styleSelect__selectarea_listen' id= 'children_wrapper'>
                         <div class='category__styleSelect__selectarea__listen__added'>
@@ -13,7 +14,7 @@ $(function(){
                           <select>
                         </div>
                       </div>`;
-    $('.category__styleSelect__selectarea__listen').append(childSelectHtml);
+    $('.category__styleSelect').append(childSelectHtml);
   }
 
   function appendGrandchidrenBox(insertHTML){
@@ -26,7 +27,7 @@ $(function(){
                                 </select>
                               </div>
                             </div>`;
-    $('.category__styleSelect__selectarea__two').append(grandchildSelectHtml);
+    $('.category__styleSelect').append(grandchildSelectHtml);
   }
 
   $('#parent_category').on('change', function(){

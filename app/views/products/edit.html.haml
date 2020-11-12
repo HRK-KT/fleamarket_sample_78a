@@ -59,9 +59,11 @@
                 必須
             .category__styleSelect
               .category__styleSelect__selectarea
-                = f.collection_select :category, Category.where(ancestry: nil), :id, :name, {prompt: '---'}, {id: 'parent_category'}
-              .category__styleSelect__selectarea__listen
-              .category__styleSelect__selectarea__two
+                = f.collection_select :category, Category.where(ancestry: nil), :id, :name, {prompt: '---', selected: @product.category.root_id}, {id: 'parent_category'}
+              .category__styleSelect__selectarea__list#children_wrapper
+                = f.collection_select :category, @product.category.parent.siblings, :id, :name, {prompt: '---', selected: @product.category.parent_id}, {id: 'child_category'}
+              .category__styleSelect__selectarea__two#grandchildren_wrapper
+                = f.collection_select :category_id, @product.category.siblings, :id, :name , {prompt: '---', selected: @product.category_id}, {id: 'grandchild_category'}
         .product__brand__box
           .product__brandField
             .product__brandField__name      
